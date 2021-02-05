@@ -41,7 +41,7 @@ def decrypt(ciphertext: bytes) -> str:
 
 # print(argv)
 if len(argv) not in [3, 4]:
-    print('Usage: python keys.py -{e|d} <file> [output]')
+    print('Usage: python3 keys.py -{e|d} <file> [output]')
     print('\t-e\t: encrypt\n\t-d\t: decrypt\n')
     exit(1)
 # end if
@@ -92,6 +92,6 @@ elif argv[1] == '-d':
     open(file_name, 'w', encoding='utf-8').write(decrypted)
     print('Decrypted data of', argv[2], ' and saved to', file_name)
 else:
-    print('Usage: python keys.py -{e|d} <file> [output]')
+    print('Usage: python3 keys.py -{e|d} <file> [output]')
     print('\t-e\t: encrypt\n\t-d\t: decrypt\n')
 # end if
